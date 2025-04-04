@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - E-Commerce</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-light py-3">
+        <div class="container text-center">
+            <h1>Our Products</h1>
+        </div>
+    </header>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partners.html">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container my-5">
+        <h2 class="mb-4">Product Categories</h2>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Electronics">
+                    <div class="card-body">
+                        <h5 class="card-title">Electronics</h5>
+                        <p class="card-text">Discover our range of high-quality electronics, from smartphones to laptops.</p>
+                        <a href="#" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Clothing">
+                    <div class="card-body">
+                        <h5 class="card-title">Clothing</h5>
+                        <p class="card-text">Explore our fashion collection for men, women, and children.</p>
+                        <a href="#" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Home & Kitchen">
+                    <div class="card-body">
+                        <h5 class="card-title">Home & Kitchen</h5>
+                        <p class="card-text">Find everything you need for your home, from appliances to decor.</p>
+                        <a href="#" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Books">
+                    <div class="card-body">
+                        <h5 class="card-title">Books</h5>
+                        <p class="card-text">Browse our extensive collection of books across all genres.</p>
+                        <a href="#" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Sports & Outdoors">
+                    <div class="card-body">
+                        <h5 class="card-title">Sports & Outdoors</h5>
+                        <p class="card-text">Get equipped for your favorite sports and outdoor activities.</p>
+                        <a href="#" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 mb-4">
+                <div class="card category-card">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Beauty & Personal Care">
+                    <div class="card-body">
+                        <h5 class="card-title">Beauty & Personal Care</h5>
+                        <p class="card-text">Discover premium beauty and personal care products.</p>
+                        <a href="#" class="btn btn-primary">View Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-light py-3 mt-5">
+        <div class="container text-center">
+            &copy; 2025 E-Shop. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
